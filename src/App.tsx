@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       <div className="h-screen flex justify-center items-center ">
-        <div className='rounded-lg bg-white w-1/2 m-0 flex p-4'>
-          <div className='w-1/2'>
+        <div className='rounded-lg bg-white w-full md:w-1/2 m-0 md:flex p-4'>
+          <div className='w-full md:w-1/2'>
             <div className='flex' ><img src='vite.svg' />Logo Image</div>
             <div className='p-8'>
               <div><h3 className='font-bold'>Welcome Back,John</h3><span>****</span></div>
@@ -80,7 +80,7 @@ function App() {
             </div>
           </div>
 
-          <div className='w-1/2 py-20'>
+          <div className='w-full md:w-1/2 mt-4 md:mt-0 md:py-20'>
             <Swiper
               modules={[Autoplay, Navigation, Pagination]}
               spaceBetween={10}
