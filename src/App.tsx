@@ -1,10 +1,6 @@
 import './App.css'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 import { useForm, type SubmitHandler } from 'react-hook-form'
+import Slider from './components/slider'
 
 type FormData = {
 
@@ -81,26 +77,7 @@ function App() {
           </div>
 
           <div className='w-full md:w-1/2 mt-4 md:mt-0 md:py-20'>
-            <Swiper
-              modules={[Autoplay, Navigation, Pagination]}
-              spaceBetween={10}
-              slidesPerView={1}
-              loop={true}
-              autoplay={{ delay: 3000 }}
-              navigation
-              pagination={{ clickable: true }}
-              className="rounded-xl"
-            >
-              <SwiperSlide>
-                <img src="1.jpg" alt="slide1" className="w-full h-full object-cover rounded-xl" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="2.jpg" alt="slide2" className="w-full h-full object-cover rounded-xl" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="3.jpg" alt="slide3" className="w-full h-full object-cover rounded-xl" />
-              </SwiperSlide>
-            </Swiper>
+          {<Slider/>}
           </div>
 
 
